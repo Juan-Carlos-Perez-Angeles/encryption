@@ -3,8 +3,7 @@
 # -*- coding: utf-8 -*-
 """vigenere_ld.py
 ==================================
-Implementación **didáctica** del cifrado de Vigenère para **cifrar y
-descifrar** mensajes de texto en usando **clave por defecto 'LD'**, tal como en los ejemplos de clase.
+Implementación del cifrado de Vigenère para **cifrar y descifrar** mensajes de texto en usando **clave por defecto 'LD'**, tal como en los ejemplos de clase.
 
 ► Características
 ------------------
@@ -29,15 +28,6 @@ Con la clave del ejemplo *DATOS* del material de clase:
     $ python vigenere_ld.py -m encrypt -k DATOS "DIPLOMADO"
     GIIZGPAWC
 
-► API (importable)
-------------------
->>> from vigenere_ld import vigenere_encrypt, vigenere_decrypt
->>> vigenere_encrypt("INFORMACION", key="LD")
-'TQQRCPLFTRY'
->>> vigenere_decrypt("TQQRCPLFTRY", key="LD")
-'INFORMACION'
-
-► Notas didácticas
 -------------------
 - El cifrado de Vigenère suma (mod 26) el valor de la letra del mensaje
   con el valor de la letra de la clave. Descifrar es restar (mod 26).
